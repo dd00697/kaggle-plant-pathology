@@ -1,0 +1,36 @@
+# Virtual env
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data & models (adjust these as needed)
+data/
+datasets/
+ml/models/*.pkl
+ml/models/*.pt
+ml/models/*.pth
+
+# Logs
+logs/
+*.log
+
+# Secrets / API keys
+.env
+*.env
+kaggle.json
+.kaggle/
+wandb/
