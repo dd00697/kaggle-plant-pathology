@@ -16,7 +16,7 @@ def train_single_fold(fold: int) -> Path:
 
     dls = get_dols_for_fold(train_df, fold)
 
-    learn = timm_vision__learner(
+    learn = timm_learner(
         dls, 
         ARCH,
         metrics=accuracy,
