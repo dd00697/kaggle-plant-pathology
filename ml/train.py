@@ -51,6 +51,6 @@ def train_all_folds():
     for p in paths:
         print(" -", p)
 
-    if __name__ == "__main__":
-        MODELS_DIR.mkdir(parents=True, exist_ok=True)
-        train_all_folds()
+if __name__ == "__main__":
+    MODELS_DIR.mkdir(parents=True, exist_ok=True)
+    train_all_folds()
