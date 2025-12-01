@@ -17,7 +17,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Data & models (adjust these as needed)
+# Data & models 
 data/
 datasets/
 ml/models/*.pkl
