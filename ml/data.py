@@ -3,7 +3,7 @@ from typing import Tuple
 import pandas as pd 
 from sklearn.model_selection import StratifiedKFold
 from fastai.vision.all import * 
-from .config import TRAIN_CSV, TARGET_COLS, IMAGE_DIR, N_FOLDS, IMG_SIZE, BATCH_SIZE
+from .config import TRAIN_CSV, TARGET_COLS, IMAGES_DIR, N_FOLDS, IMG_SIZE, BATCH_SIZE
 
 
 def load_train_df() -> pd.DataFrame:
