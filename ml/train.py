@@ -1,6 +1,6 @@
 from pathlib import Path
 import torch
-from fast.ai.vision.all import *
+from fastai.vision.all import *
 from fastai.callback.tracker import SaveModelCallback
 from.config import (
     MODELS_DIR, ARCH, N_FOLDS, EPOCHS, LR
