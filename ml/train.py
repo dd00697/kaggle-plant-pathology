@@ -1,5 +1,6 @@
 from pathlib import Path
 import torch
+from wwf.vision.timm import *
 from fastai.vision.all import *
 from fastai.callback.tracker import SaveModelCallback
 from.config import (
