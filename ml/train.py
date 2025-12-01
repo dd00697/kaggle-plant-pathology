@@ -2,6 +2,7 @@ from pathlib import Path
 import torch
 from wwf.vision.timm import *
 from fastai.vision.all import *
+from fastai.callback.progress import ProgressCallback
 from fastai.callback.tracker import SaveModelCallback
 from.config import (
     MODELS_DIR, ARCH, N_FOLDS, EPOCHS, LR
@@ -23,6 +24,8 @@ def train_single_fold(fold: int) -> Path:
         metrics=accuracy,
         pretrained=True,
     )
+
+    learn.remove_cbs(ProgressCallback)
 
     cbs = [
         SaveModelCallback(
