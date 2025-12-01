@@ -34,3 +34,6 @@ logs/
 kaggle.json
 .kaggle/
 wandb/
+
+models/
+*.pkl
